@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Person.h"
 #import <objc/runtime.h>
+#import "Cat.h"
 
 @interface ViewController ()
 
@@ -25,6 +26,9 @@
     [super viewDidLoad];
     self.xjy = [[Person alloc] init];
     // Do any additional setup after loading the view, typically from a nib.
+    Cat *cat = [[Cat alloc] init];
+    
+    
 }
 
 

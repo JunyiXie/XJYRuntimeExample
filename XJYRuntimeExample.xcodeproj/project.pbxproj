@@ -18,6 +18,8 @@
 		9F5F6A701E4725CC007A786E /* UIView+AssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5F6A6D1E4725CC007A786E /* UIView+AssociatedObject.m */; };
 		9F5F6A731E47261E007A786E /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5F6A721E47261E007A786E /* Person.m */; };
 		9F5F6A791E473F49007A786E /* UIViewController+LogTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5F6A781E473F49007A786E /* UIViewController+LogTracking.m */; };
+		9F5F6A7D1E478F96007A786E /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5F6A7C1E478F96007A786E /* Cat.m */; };
+		9F5F6A801E479079007A786E /* AlternateObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5F6A7F1E479079007A786E /* AlternateObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,10 @@
 		9F5F6A721E47261E007A786E /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		9F5F6A771E473F49007A786E /* UIViewController+LogTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LogTracking.h"; sourceTree = "<group>"; };
 		9F5F6A781E473F49007A786E /* UIViewController+LogTracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LogTracking.m"; sourceTree = "<group>"; };
+		9F5F6A7B1E478F96007A786E /* Cat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
+		9F5F6A7C1E478F96007A786E /* Cat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
+		9F5F6A7E1E479079007A786E /* AlternateObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlternateObject.h; sourceTree = "<group>"; };
+		9F5F6A7F1E479079007A786E /* AlternateObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlternateObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +159,7 @@
 		9F5F6A691E4725CC007A786E /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				9F5F6A7A1E478F4F007A786E /* Method Forward */,
 				9F5F6A6A1E4725CC007A786E /* AddMethod */,
 				9F5F6A6B1E4725CC007A786E /* AssociatedObject */,
 				9F5F6A6E1E4725CC007A786E /* Hook Method */,
@@ -193,6 +200,17 @@
 				9F5F6A781E473F49007A786E /* UIViewController+LogTracking.m */,
 			);
 			path = "Method Swizzling";
+			sourceTree = "<group>";
+		};
+		9F5F6A7A1E478F4F007A786E /* Method Forward */ = {
+			isa = PBXGroup;
+			children = (
+				9F5F6A7B1E478F96007A786E /* Cat.h */,
+				9F5F6A7C1E478F96007A786E /* Cat.m */,
+				9F5F6A7E1E479079007A786E /* AlternateObject.h */,
+				9F5F6A7F1E479079007A786E /* AlternateObject.m */,
+			);
+			path = "Method Forward";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,6 +351,8 @@
 			files = (
 				9F5F6A3B1E471DEF007A786E /* ViewController.m in Sources */,
 				9F5F6A791E473F49007A786E /* UIViewController+LogTracking.m in Sources */,
+				9F5F6A7D1E478F96007A786E /* Cat.m in Sources */,
+				9F5F6A801E479079007A786E /* AlternateObject.m in Sources */,
 				9F5F6A381E471DEF007A786E /* AppDelegate.m in Sources */,
 				9F5F6A731E47261E007A786E /* Person.m in Sources */,
 				9F5F6A351E471DEF007A786E /* main.m in Sources */,
@@ -574,6 +594,7 @@
 				9F5F6A5F1E471DEF007A786E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F5F6A601E471DEF007A786E /* Build configuration list for PBXNativeTarget "XJYRuntimeExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -582,6 +603,7 @@
 				9F5F6A621E471DEF007A786E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F5F6A631E471DEF007A786E /* Build configuration list for PBXNativeTarget "XJYRuntimeExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -590,6 +612,7 @@
 				9F5F6A651E471DEF007A786E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
