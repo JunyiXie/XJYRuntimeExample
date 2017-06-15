@@ -2,8 +2,7 @@
 XJY Runtime Example Demo
 
 
-[例子Demo](https://github.com/JunyiXie/XJYRuntimeExample)
-欢迎给我star!我会继续分享的。
+
 
 ## 概述
 
